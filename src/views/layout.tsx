@@ -16,6 +16,7 @@ const css = `
   th { color: var(--mute); font-weight: normal; }
   .warn { color: var(--warn); }
   .mute { color: var(--mute); }
+  tr.flag td { background: color-mix(in srgb, var(--warn) 12%, transparent); }
 `;
 
 export function Layout(props: { title: string; lane: Lane; children: Child }) {
