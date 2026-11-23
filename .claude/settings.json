@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "mcp__mega-challenge__claim-challenge",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.agents/skills/preview/gate.sh",
+            "timeout": 150
+          }
+        ]
+      }
+    ]
+  }
+}

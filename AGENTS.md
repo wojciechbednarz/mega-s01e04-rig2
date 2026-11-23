@@ -29,6 +29,9 @@ Read first: `docs/vision.md`, `docs/styleguide.md`. Decisions: `docs/adr/`.
 
 5. An issue is closed only when its "Done when" holds. If it can't hold yet, leave it open and
    say what it waits on.
+6. A plan that ends in a review: skill `preview` (`.agents/skills/preview/`). Its check runs
+   before the link is sent, from outside our network too, and the harness enforces it: `gate.sh`
+   blocks a send whose link fails. The evidence goes on the plan's preview issue.
 
 ## Skills
 
